@@ -20,7 +20,7 @@
   background: #555;
 }
 body {
-  background: linear-gradient(45deg, #308676, #d0a7ee) no-repeat;
+  /* background: linear-gradient(45deg, #308676, #d0a7ee) no-repeat; */
   padding: 50px 0;
   min-height: 100vh;
   overflow: auto;

@@ -30,3 +30,30 @@ class Events {
     }
 }
 new Events();
+//
+//
+//
+//
+//
+let x = {
+    y: {
+        name: 'l',
+        age: 12
+    },
+    z: ['3', 4, '1']
+};
+function clone(obj) {
+    let clonedObj = {};
+    let key;
+    for (key in obj) {
+        if (typeof obj[key] === 'object') {
+            clonedObj[key] = clone(obj[key]);
+        }
+        else {
+            clonedObj[key] = obj[key];
+        }
+    }
+    return clonedObj;
+}
+let b = clone(x);
+console.log(x, b);
